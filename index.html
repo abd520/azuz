@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أنابيب العينات المخبرية</title>
+  <style>
+    /* إعدادات عامة */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #0073e6;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #0073e6;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* جدول الأنواع */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table th, table td {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    table th {
+      background-color: #0073e6;
+      color: white;
+    }
+
+    /* معرض الصور */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: calc(33.33% - 10px);
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* الأسئلة الشائعة */
+    .faq {
+      margin-top: 30px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+    }
+
+    .faq-item h3 {
+      cursor: pointer;
+      background: #0073e6;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 0;
+    }
+
+    .faq-item p {
+      display: none;
+      background: #f4f4f4;
+      padding: 10px;
+      margin: 0;
+      border: 1px solid #ddd;
+      border-top: none;
+    }
+
+    .faq-item h3:hover {
+      background: #005bb5;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>أنابيب العينات المخبرية</h1>
+  <nav>
+    <a href="#intro">المقدمة</a>
+    <a href="#types">أنواع الأنابيب</a>
+    <a href="#gallery">معرض الصور</a>
+    <a href="#faq">الأسئلة الشائعة</a>
+  </nav>
+</header>
+
+<div class="container" id="intro">
+  <h2>مقدمة</h2>
+  <p>
+    تُعد أنابيب العينات المخبرية أدوات أساسية تُستخدم في جمع العينات المخبرية مثل الدم والسوائل الحيوية الأخرى.
+    تختلف الأنابيب في الشكل والحجم والمكونات الداخلية بناءً على نوع التحليل المطلوب. يتم تصنيع هذه الأنابيب
+    بمعايير عالمية لضمان الدقة والجودة.
+  </p>
+</div>
+
+<div class="container" id="types">
+  <h2>أنواع الأنابيب وألوان الأغطية</h2>
+  <table>
+    <tr>
+      <th>اللون</th>
+      <th>الاستخدام</th>
+      <th>المكونات</th>
+    </tr>
+    <tr>
+      <td>الأحمر</td>
+      <td>تحاليل الكيمياء الحيوية</td>
+      <td>بدون إضافات</td>
+    </tr>
+    <tr>
+      <td>الأزرق</td>
+      <td>اختبارات التجلط</td>
+      <td>مضادات تخثر (سيترات)</td>
+    </tr>
+    <tr>
+      <td>الأرجواني</td>
+      <td>تحليل صورة الدم الكاملة</td>
+      <td>EDTA</td>
+    </tr>
+    <tr>
+      <td>الأخضر</td>
+      <td>تحاليل كيميائية</td>
+      <td>هيبارين</td>
+    </tr>
+  </table>
+</div>
+
+<div class="container" id="gallery">
+  <h2>معرض الصور</h2>
+  <div class="gallery">
+    <img src="images/all.jpg"  alt="أنبوب متنوعة">
+       <img src="images/blu.jpg" alt="أنبوب أزرق">
+       <img src="images/red.jpg" alt="أنبوب احمر">
+  
+  </div>
+</div>
+
+<div class="container faq" id="faq">
+  <h2>الأسئلة الشائعة</h2>
+  <div class="faq-item">
+    <h3>ما هي وظيفة الأنابيب ذات الأغطية الملونة؟</h3>
+    <p>تستخدم الألوان لتحديد نوع المواد المضافة داخل الأنبوب، مثل مضادات التخثر أو المواد الحافظة. يساعد ذلك الفنيين الطبيين على اختيار الأنبوب الصحيح لكل نوع من التحاليل لضمان الحصول على نتائج دقيقة ومناسبة للعينة المحددة.</p>
+  </div>
+  <div class="faq-item">
+    <h3>هل يمكن استخدام نفس الأنبوب لجميع التحاليل؟</h3>
+    <p>لا، لكل نوع من التحاليل أنبوب مخصص بمواصفات معينة لضمان الحصول على النتائج الدقيقة. استخدام الأنبوب غير المناسب قد يؤدي إلى تلوث العينة أو تحللها قبل التحليل، مما يؤثر سلبًا على النتائج.</p>
+  </div>
+  <div class="faq-item">
+    <h3>ما هي المواد الحافظة المستخدمة في الأنابيب؟</h3>
+    <p>تشمل المواد الحافظة EDTA، الهيبارين، والسيترات لمنع التخثر والحفاظ على العينة. تستخدم هذه المواد لضمان استقرار العينة ومنع تفاعلات غير مرغوب فيها قد تؤثر على دقة التحليل.</p>
+  </div>
+  <div class="faq-item">
+    <h3>كيف يتم جمع العينات بشكل آمن؟</h3>
+    <p>يتم جمع العينات باستخدام تقنيات معقمة وأدوات مخصصة لكل نوع من العينات لضمان عدم تلوثها أو تعريضها لأي عوامل خارجية قد تؤثر على نتائج التحليل. يتم استخدام قفازات وأدوات جمع معقمة وضمان نقل العينات إلى المختبر بسرعة وبأمان.</p>
+  </div>
+  <div class="faq-item">
+    <h3>ما هي الفروقات بين أنواع الأنابيب المختلفة؟</h3>
+    <p>الفروقات الرئيسية تكمن في نوع المواد المضافة داخل الأنبوب (مثل مضادات التخثر) والغرض من الاستخدام. على سبيل المثال، الأنابيب الحمراء تستخدم لتحاليل الكيمياء الحيوية بينما الأنابيب الزرقاء تستخدم لاختبارات التجلط.</p>
+  </div>
+</div>
+
+<footer>
+  <p style="text-align:center; color:white "> اعداد الطالب :عبد العزيز حازم بدر</p>
+  
+  <a href="https://www.instagram.com/ih0zl/#">lnstagram</a>
+</footer>
+
+<script>
+  // عرض وإخفاء الأسئلة الشائعة
+  const faqItems = document.querySelectorAll('.faq-item h3');
+  faqItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const content = item.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
